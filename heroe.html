@@ -1,0 +1,127 @@
+<!Doctype <html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>La Taberna</title>
+<body>
+    <header>
+        <h1 id="logo">"La Taberna"</h1></p>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <button class="menu__boton">Inicio</button>
+            <button class="menu__boton">Mi Heroe</button>
+            <button class="menu__boton">Mercado</button>
+            <button class="menu__boton">Bosque</button>
+        </ul>
+    </nav>
+  
+    <main>
+    <h2>Ficha de Héroe</h2>    
+
+        <div id="ficha" class="flexbox">      
+            <div class="caja flexbox solo">     
+                <div class="datos-pj">
+                    <p>Nombre del Héroe</p><input type="text" id="nombreHeroe" placeholder="¿Cómo se llama?">     
+                </div>           
+                <div class="datos-pj">
+                    <p>Linaje</p><input type="text" id="linaje" placeholder="¿Cuál es su raza?">  
+                </div>             
+                <div class="datos-pj">
+                    <p>Asentamiento</p><input type="text" id="asentamiento" placeholder="¿Donde nació?">
+                </div>           
+                <div class="datos-pj">
+                    <p>Subclase</p><input type="text" id="subclase" placeholder="¿Cómo pelea?">
+                </div>
+            </div>    
+        </div>
+
+        <div id="ficha" class="flexbox">
+            <div class="caja centro flexbox">
+                <div class="panel_stat">
+                    AGILIDAD: </strong><input type="text" class="num" placeholder="00"> 
+                    FUERZA: </strong><input type="text" class="num" placeholder="00"> 
+                    FINEZA: </strong><input type="text" class="num" placeholder="00"> 
+                    INSTINTO: </strong><input type="text" class="num" placeholder="00"> 
+                    PRESENCIA: </strong><input type="text" class="num" placeholder="00"> 
+                    CONOCIMIENTO: </strong><input type="text" class="num" placeholder="00">  
+                </div> 
+                <div class="caja-2">
+                    <div class="panel">EVASIÓN: <input type="text" class="num" placeholder="00">                   
+                    ARMADURA: <input type="text" class="num" placeholder="00">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="caja-2">
+                <section class="izq">
+                    <div class="panel">HP: 
+                            <input type="text" class="stat num" placeholder="00">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                    </div>
+                 </div>
+                    <div class="panel">DAÑO: Menor <input type="text" class="stat num" placeholder="00"> Medio 
+                        <input type="text" class="stat num" placeholder="00"> Mayor</div>
+                    <div class="panel">ESTRÉS</div>
+                    <div>
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="panel">HOPE:</div>
+                    <div>
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </section>
+            </div>
+            <div class="caja derecha">            
+                    <div class="panel">ARMA PRIMARIA ACTIVA: <input type="text" class="stat" placeholder="Tu arma aquí"></div>
+                    <textarea placeholder="Descripcion" class="caja-texto"></textarea>        
+                    <div class="panel">ARMA SECUNDARIA ACTIVA: <input type="text" class="stat" placeholder="Tu arma aquí"></div>
+                    <textarea placeholder="Descripcion" class="caja-texto"></textarea>            
+                    <div class="panel">ARMADURA ACTIVA: <input type="text" class="stat" placeholder="Tu armadura aquí"></div>
+                    <textarea placeholder="Descripcion" class="caja-texto"></textarea>
+                    <div class="panel">INVENTORY</div>
+                    <textarea placeholder="Escribí la historia del personaje" class="caja-texto"></textarea>           
+            </div>            
+        </div>
+    </main>
+   
+    <footer>
+        <p>&copy; 2025 La Taberna. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
