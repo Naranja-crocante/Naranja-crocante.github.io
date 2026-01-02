@@ -7,15 +7,15 @@
 <title>La Taberna</title>
 <body>
     <header>
-        <h1 id="logo">"La Taberna"</h1></p>
+        <h1 id="logo">"La Taberna"</h1>
     </header>
 
     <nav>
-        <ul id="menu">
-            <button class="menu__boton">Inicio</button>
-            <button class="menu__boton">Mi Heroe</button>
-            <button class="menu__boton">Mercado</button>
-            <button class="menu__boton">Bosque</button>
+        <ul class="nav__ul">
+            <li name="inicio" class="nav__link"><a href="index.html">Inicio</a></li>
+            <li name="heroe" class="nav__link"><a href="heroe.html">Mi Heroe</a></li>
+            <li name="mercado" class="nav__link"><a href="mercado.html">Mercado</a></li>
+            <li name="bosque" class="nav__link"><a href="bosque.html">Bosque</a></li>
         </ul>
     </nav>
   
@@ -117,11 +117,22 @@
                     <textarea placeholder="Escribí la historia del personaje" class="caja-texto"></textarea>           
             </div>            
         </div>
+
+        <div id="ficha" class="flexbox">      
+            <div class="caja flexbox solo">
+                <h4> MOCHILA: </h4>
+                <div class="flexbox">
+                    <div><textarea placeholder="Inventario..." class="mochila"></textarea></div>
+                </div>           
+            </div>    
+        </div>
+
     </main>
+
+
    
     <footer>
         <p>&copy; 2025 La Taberna. Todos los derechos reservados.</p>
     </footer>
 
 </body>
-</html>

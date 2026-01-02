@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
     text-align: center;
     color: #ffffff;
@@ -19,24 +23,42 @@ body {
     padding: 0;
 }
 
+/* Estilos de la barra de navegación */
+
 nav {
     display: flex;
-    background-color: #d4a373;
-    gap: 0.5rem;
-    justify-content: center;
+    background-color: #ebb374;
+    justify-content: space-between;
+    padding-left: 40px;
 }
 
-nav button {
+.nav__ul {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav__item{
+   list-style: none; 
+}
+
+.nav__link {
     background-color: hsla(30, 49%, 50%, 0);
     color: #ffffff;
     border: none;
-    padding: 0 20px;
+    display: inline-block;
+    padding: 8px 10px;
     font-family: 'Heavitas', sans-serif;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
-nav button:hover {
-    text-shadow: #a7551e 1px 1px 2px;
+.nav__link:hover {
+    background-color: antiquewhite;
+    border-radius: 15px;
 }
 
 h2{
@@ -67,6 +89,12 @@ h2{
     padding: 0 3%;
     font-family: arial;
     font-weight: 550;
+}
+#columnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 #ficha {
@@ -101,7 +129,7 @@ h2{
 }
 
 .solo{
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,6 +173,13 @@ h2{
     margin-bottom: 10px;
 }
 
+.mochila{
+    width: 900px;
+    height: 200px;
+    resize: none;
+    margin: 10px;
+}
+
 .num {
     margin-bottom: 10px;
     width: 25px;
@@ -157,11 +192,63 @@ h2{
   height: auto;
 }
 
+/*-- Estilos de la página del mercado --*/
+
+.navegacion{
+    background-color: #faae7c;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+}
+
+.navegacion-top{
+    justify-content: space-between;
+    position: sticky;
+    top: 5px;
+}
+
+.navegacion-bot{
+    position: sticky;
+    top: 25px;
+    padding: 16px 24px;
+    text-decoration: none;
+    justify-content: start;
+    flex-direction: column;
+    display: flex;
+}
+
+.shop{
+    padding: 16px 24px;
+    align-self: stretch;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.col{
+    height: 100vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+    margin: 1rem 0;
+
+}
+.item{
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+
 footer {
     text-align: center;
-    padding: 0;
-    background-color: #be8143;
-    color: #ffffff;
-    font-family: 'Heavitas', sans-serif;
-    font-size: 16px;
-}   
+    background-color: #ebb374;
+}
