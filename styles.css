@@ -11,11 +11,11 @@ header {
 }
 #logo {
     color: #ffffff;
-    text-shadow: #a7551e 2px 2px 4px;
+    text-shadow: #000000 2px 2px 4px;
 }
 
 body {
-    background-image: url(imgs/fondo-madera.jpg);
+    background-color: #34150f;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,7 +27,7 @@ body {
 
 nav {
     display: flex;
-    background-color: #ebb374;
+    background-color: #8c3f27;
     justify-content: space-between;
     padding-left: 40px;
 }
@@ -57,21 +57,27 @@ nav {
     text-decoration: none;
 }
 .nav__link:hover {
-    background-color: antiquewhite;
-    border-radius: 15px;
+    background-color: #34150f;
+    border-radius: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
 }
 
 h2{
     margin-top: 3%;
     font-family: 'Heavitas', sans-serif;
     font-size: 26px;
-    color: #f1f1f1;
+    color:#f1f1f1;
     text-align: center;
-    text-shadow: #a7551e 5px 5px 10px;
+    text-shadow: #090909 5px 5px 5px;
 }
 
 
 .main {
+
     flex: 1;
     display: flex;
     padding: 20px;
@@ -82,7 +88,7 @@ h2{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: flex-start;
     flex-direction: row;
     gap : 1rem;
     max-width: 100%;
@@ -195,29 +201,34 @@ h2{
 /*-- Estilos de la página del mercado --*/
 
 .navegacion{
-    background-color: #faae7c;
+    background-color: #ce8053;
     width: 20%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: start;
     flex-grow: 0;
     flex-shrink: 0;
-    margin-bottom: 40px;
+    position: sticky;
+    top: 0px;
 }
 
 .navegacion-top{
     justify-content: space-between;
     position: sticky;
-    top: 5px;
+    top: 0px;
+}
+
+.navegacion-top > h2{
+    margin-top: 65px;
 }
 
 .navegacion-bot{
     position: sticky;
-    top: 25px;
+    top: 105px;
     padding: 16px 24px;
     text-decoration: none;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
     display: flex;
 }
@@ -229,24 +240,66 @@ h2{
     justify-content: space-between;
 }
 
-.col{
-    height: 100vh;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 1rem;
-    margin: 1rem 0;
-
-}
-.item{
-    background-color: #f1f1f1;
+.shop:hover{
+    background-color: #f1f1f191;
+    font-size: 22px;
     border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
-    flex-grow: 1;
+}
+.shop:link{
+    font-size: 20px;
+    color: #34150f;
+}
+.shop:visited{
+    font-size: 20px;
+    color: #34150f;
 }
 
+.shop-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* secciones una debajo de otra */
+    gap: 4rem;
+}
+
+.shop-section { 
+    padding: 0 50px;
+    padding-bottom: 4rem;
+}
+
+.shop-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #d39858;
+    text-shadow: #000000 4px 4px 4px;
+}
+
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.shop-item {
+    flex: 0 0 calc(25% - 1rem); /* 4 por fila */
+    min-height: 200px;
+    background: #eaceaa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 3px solid #d39858;
+    color: #34150f;
+    text-align: center;
+}
+
+.shop-item h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+.shop-item .price {
+    font-weight: bold;
+    color: #34150f;
+}
 
 footer {
     text-align: center;

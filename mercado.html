@@ -1,127 +1,109 @@
-<!Doctype <html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>La Taberna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>La Taberna</title>
+</head>
+
 <body>
-    <header>
-        <h1 id="logo">"La Taberna"</h1>
-    </header>
 
-    <nav>
-        <ul class="nav__ul">
-            <li name="inicio" class="nav__link"><a href="index.html">Inicio</a></li>
-            <li name="heroe" class="nav__link"><a href="heroe.html">Mi Heroe</a></li>
-            <li name="mercado" class="nav__link"><a href="mercado.html">Mercado</a></li>
-            <li name="bosque" class="nav__link"><a href="bosque.html">Bosque</a></li>
-        </ul>
-    </nav>
+<header>
+  <h1 id="inicio">"La Taberna"</h1>
+</header>
 
-    <main class="flexbox">
-        <div class="navegacion">     
-            <div class="navegacion-top">
-                <h2> Mercado </h2>
-            </div>           
-            <div class="navegacion-bot">
-                <a class="shop" href="#bazar">Bazar</a>
-                <a class="shop" href="#herrero">Herrero</a>
-                <a class="shop" href="#herborista">Herborista</a>
-                <a class="shop" href="#posiones">Posiones</a>  
-                <a class="shop" href="#mercadonegro">Mercado Negro</a>  
-            </div>    
-        </div>   
-    
-        <div id=columnas class="solo flexbox">
-            <div id="bazar" class="solo flexbox">
-                <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                    <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                     <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
+<nav>
+  <ul class="nav__ul">
+    <li class="nav__link"><a href="index.html">Inicio</a></li>
+    <li class="nav__link"><a href="heroe.html">Mi Heroe</a></li>
+    <li class="nav__link"><a href="mercado.html">Mercado</a></li>
+    <li class="nav__link"><a href="bosque.html">Bosque</a></li>
+  </ul>
+</nav>
 
-            <div id="herrero" class="solo flexbox">
-                <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                    <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                     <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
+<main class="flexbox">
 
-            <div id="herborista" class="solo flexbox">
-                <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                    <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                     <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
+  <!-- Navegación lateral -->
+  <div class="navegacion">     
+    <div class="navegacion-top">
+      <h2>Mercado</h2>
+    </div>           
+    <div class="navegacion-bot">
+      <a class="shop" href="#inicio">Inicio</a>
+      <a class="shop" href="#bazar">Bazar</a>
+      <a class="shop" href="#herrero">Herrero</a>
+      <a class="shop" href="#herborista">Herborista</a>
+      <a class="shop" href="#alquimista">Alquimista</a>  
+      <a class="shop" href="#mercadonocturno">Mercado Nocturno</a>  
+    </div>    
+  </div>   
 
-            <div id="posiones" class="solo flexbox">
-                <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                    <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                     <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
+  <!-- Contenido principal -->
+  <div class="shop-page">
 
-            <div id="mercadonegro" class="solo flexbox">
-                <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                    <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-                     <div class="col">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <section class="shop-section">
+      <h2 id="bazar">Bazar</h2>
+      <div class="shop-grid">
+        <div class="shop-item"><h3>Espada de hierro</h3><span class="price">$120</span></div>
+        <div class="shop-item"><h3>Escudo reforzado</h3><a href="imgs/abarrotes.jpg"></a><span class="price">$90</span></div>
+        <div class="shop-item"><h3>Yelmo pesado</h3><span class="price">$75</span></div>
+        <div class="shop-item"><h3>Martillo de guerra</h3><span class="price">$150</span></div>
+        <div class="shop-item"><h3>Daga</h3><span class="price">$40</span></div>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <h2 id="herrero">Herrero</h2>
+      <div class="shop-grid">
+        <div class="shop-item"><h3>Espada de hierro</h3><span class="price">$120</span></div>
+        <div class="shop-item"><h3>Escudo reforzado</h3><span class="price">$90</span></div>
+        <div class="shop-item"><h3>Yelmo pesado</h3><span class="price">$75</span></div>
+        <div class="shop-item"><h3>Martillo de guerra</h3><span class="price">$150</span></div>
+        <div class="shop-item"><h3>Daga</h3><span class="price">$40</span></div>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <h2 id="herborista">Herborista</h2>
+      <div class="shop-grid">
+        <div class="shop-item"><h3>Espada de hierro</h3><span class="price">$120</span></div>
+        <div class="shop-item"><h3>Escudo reforzado</h3><span class="price">$90</span></div>
+        <div class="shop-item"><h3>Yelmo pesado</h3><span class="price">$75</span></div>
+        <div class="shop-item"><h3>Martillo de guerra</h3><span class="price">$150</span></div>
+        <div class="shop-item"><h3>Daga</h3><span class="price">$40</span></div>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <h2 id="alquimista">Alquimista</h2>
+      <div class="shop-grid">
+        <div class="shop-item"><h3>Espada de hierro</h3><span class="price">$120</span></div>
+        <div class="shop-item"><h3>Escudo reforzado</h3><span class="price">$90</span></div>
+        <div class="shop-item"><h3>Yelmo pesado</h3><span class="price">$75</span></div>
+        <div class="shop-item"><h3>Martillo de guerra</h3><span class="price">$150</span></div>
+        <div class="shop-item"><h3>Daga</h3><span class="price">$40</span></div>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <h2 id="mercadonocturno">Mercado Nocturno</h2>
+      <div class="shop-grid">
+        <div class="shop-item"><h3>Espada de hierro</h3><span class="price">$120</span></div>
+        <div class="shop-item"><h3>Escudo reforzado</h3><span class="price">$90</span></div>
+        <div class="shop-item"><h3>Yelmo pesado</h3><span class="price">$75</span></div>
+        <div class="shop-item"><h3>Martillo de guerra</h3><span class="price">$150</span></div>
+        <div class="shop-item"><h3>Daga</h3><span class="price">$40</span></div>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 La Taberna. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
