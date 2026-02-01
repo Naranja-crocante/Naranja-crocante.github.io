@@ -1,13 +1,18 @@
-<!Doctype <html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <title>La Taberna</title>
+|</head>
 <body>
     <header>
-        <h1 id="logo">"La Taberna"</h1>
+        <h1 id="inicio" class="animate__animated animate__jackInTheBox">"La Taberna"</h1>
     </header>
 
     <nav>
@@ -22,32 +27,34 @@
     <main>
     <h2>Ficha de Héroe</h2>    
 
-        <div id="ficha" class="flexbox">      
-            <div class="caja flexbox solo">     
-                <div class="datos-pj">
-                    <p>Nombre del Héroe</p><input type="text" id="nombreHeroe" placeholder="¿Cómo se llama?">     
-                </div>           
-                <div class="datos-pj">
-                    <p>Linaje</p><input type="text" id="linaje" placeholder="¿Cuál es su raza?">  
-                </div>             
-                <div class="datos-pj">
-                    <p>Asentamiento</p><input type="text" id="asentamiento" placeholder="¿Donde nació?">
-                </div>           
-                <div class="datos-pj">
-                    <p>Subclase</p><input type="text" id="subclase" placeholder="¿Cómo pelea?">
+        <div class="flexbox margen">      
+            <div class="caja flexbox solo">
+                <div class="flexbox2">   
+                    <div class="datos-pj">
+                        <p>Nombre del Héroe</p><input type="text" id="nombreHeroe" placeholder="¿Cómo se llama?">     
+                    </div>           
+                    <div class="datos-pj">
+                        <p>Linaje</p><input type="text" id="linaje" placeholder="¿Cuál es su raza?">  
+                    </div>             
+                    <div class="datos-pj">
+                        <p>Asentamiento</p><input type="text" id="asentamiento" placeholder="¿Donde nació?">
+                    </div>           
+                    <div class="datos-pj">
+                        <p>Subclase</p><input type="text" id="subclase" placeholder="¿Cómo pelea?">
+                    </div>
                 </div>
             </div>    
         </div>
 
-        <div id="ficha" class="flexbox">
+        <div class="flexbox margen">
             <div class="caja centro flexbox">
                 <div class="panel_stat">
-                    AGILIDAD: </strong><input type="text" class="num" placeholder="00"> 
-                    FUERZA: </strong><input type="text" class="num" placeholder="00"> 
-                    FINEZA: </strong><input type="text" class="num" placeholder="00"> 
-                    INSTINTO: </strong><input type="text" class="num" placeholder="00"> 
-                    PRESENCIA: </strong><input type="text" class="num" placeholder="00"> 
-                    CONOCIMIENTO: </strong><input type="text" class="num" placeholder="00">  
+                    AGILIDAD: <input type="text" class="num" placeholder="00"> 
+                    FUERZA: <input type="text" class="num" placeholder="00"> 
+                    FINEZA: <input type="text" class="num" placeholder="00"> 
+                    INSTINTO: <input type="text" class="num" placeholder="00"> 
+                    PRESENCIA: <input type="text" class="num" placeholder="00"> 
+                    CONOCIMIENTO: <input type="text" class="num" placeholder="00">  
                 </div> 
                 <div class="caja-2">
                     <div class="panel">EVASIÓN: <input type="text" class="num" placeholder="00">                   
@@ -118,12 +125,10 @@
             </div>            
         </div>
 
-        <div id="ficha" class="flexbox">      
+        <div class="flexbox margen">      
             <div class="caja flexbox solo">
                 <h4> MOCHILA: </h4>
-                <div class="flexbox">
-                    <div><textarea placeholder="Inventario..." class="mochila"></textarea></div>
-                </div>           
+                    <textarea placeholder="Inventario..." class="mochila"></textarea>
             </div>    
         </div>
 

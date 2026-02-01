@@ -9,10 +9,6 @@ header {
     font-size: 20px;
     background-image: url(imgs/fondo-2.jpg);
 }
-#logo {
-    color: #ffffff;
-    text-shadow: #000000 2px 2px 4px;
-}
 
 body {
     background-color: #34150f;
@@ -21,6 +17,11 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+#inicio {
+    color: #ffffff;
+    text-shadow: #000000 2px 2px 4px;
 }
 
 /* Estilos de la barra de navegación */
@@ -92,10 +93,16 @@ h2{
     flex-direction: row;
     gap : 1rem;
     max-width: 100%;
-    padding: 0 3%;
     font-family: arial;
     font-weight: 550;
 }
+
+.flexbox2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 #columnas{
     display: flex;
     flex-direction: column;
@@ -103,10 +110,46 @@ h2{
     gap: 2rem;
 }
 
-#ficha {
+.margen {
     display: flex;
     flex-direction: row;
     padding: 1% 15%;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-evenly;
+    background-color: #eaceaa;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.solo{
+    justify-content: center;
+    align-items: center;
+    background-color: #ce8053;
+}
+.izquierda { 
+    width: 15%; 
+    display: inline-block;
+}
+.centro    { 
+    flex: 2;
+}
+.derecha   { 
+    display: inline-block;
+    flex: 1;
+}
+
+/* ---------- ficha ----------- */
+
+
+input[type="text"] {
+  width: 100%;
+  max-width: 100%;
 }
 
 .datos-pj {
@@ -123,39 +166,9 @@ h2{
     font-weight: 800;
 }
 
-.caja{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-evenly;
-    background-color: rgba(255, 255, 255, 0.212);
-    padding: 10px;
-    border-radius: 10px;
-    gap: 1rem;
-}
-
-.solo{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.izquierda { 
-    width: 15%; 
-    display: inline-block;
-}
-.centro    { 
-    width: 70%; 
-}
-.derecha   { 
-    display: inline-block;
-    width: 30%; 
-}
-
 .stats {
     display: flex;
-    background-color: #a7551e;
+    background-color: #34150f;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
@@ -166,9 +179,9 @@ h2{
     width: auto;
     margin-bottom: 10px;
     align-self: center;
-    background-color: #ebb374;
+    background-color: #ce8053;
     color: #F1F1F1;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
 }
 
@@ -180,19 +193,21 @@ h2{
 }
 
 .mochila{
-    width: 900px;
-    height: 200px;
+    display:flex;
+    width: 90%;
     resize: none;
+    height: 200px;
     margin: 10px;
 }
 
 .num {
     margin-bottom: 10px;
+    resize: horizontal;
     width: 25px;
 }
 
 .panel {
-  background: rgba(255, 255, 255, 0.445);
+  background: rgba(255, 255, 255, 0.750);
   border: 0px solid #999;
   padding: 12px;
   height: auto;
@@ -233,6 +248,8 @@ h2{
     display: flex;
 }
 
+/* ------ shop-section ------ */
+
 .shop{
     padding: 16px 24px;
     align-self: stretch;
@@ -271,6 +288,13 @@ h2{
     font-size: 1.5rem;
     color: #d39858;
     text-shadow: #000000 4px 4px 4px;
+}
+
+.shop-section img{
+    max-height: 250px;
+    min-width: 250px;
+    border-radius: 3%;
+    padding-bottom: 10px;
 }
 
 .shop-grid {
