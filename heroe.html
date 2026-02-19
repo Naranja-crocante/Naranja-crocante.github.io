@@ -9,7 +9,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 <title>La Taberna</title>
-|</head>
+</head>
 <body>
     <header>
         <h1 id="inicio" class="animate__animated animate__jackInTheBox">"La Taberna"</h1>
@@ -20,7 +20,7 @@
             <li class="nav__link"><a href="index.html">Inicio</a></li>
             <li class="nav__link"><a href="heroe.html">Mi Heroe</a></li>
             <li class="nav__link"><a href="mercado.html">Mercado</a></li>
-            <li class="nav__link"><a href="bosque.html">Bosque</a></li>
+            <li class="nav__link"><a href="misiones.html">Misiones</a></li>
         </ul>
     </nav>
   
@@ -28,37 +28,51 @@
     <h2>Ficha de Héroe</h2>    
 
         <div class="flexbox margen">      
-            <div class="caja flexbox solo">
-                <div class="flexbox2">   
-                    <div class="datos-pj">
-                        <p>Nombre del Héroe</p><input type="text" id="nombreHeroe" placeholder="¿Cómo se llama?">     
-                    </div>           
-                    <div class="datos-pj">
-                        <p>Linaje</p><input type="text" id="linaje" placeholder="¿Cuál es su raza?">  
-                    </div>             
-                    <div class="datos-pj">
-                        <p>Asentamiento</p><input type="text" id="asentamiento" placeholder="¿Donde nació?">
-                    </div>           
-                    <div class="datos-pj">
-                        <p>Subclase</p><input type="text" id="subclase" placeholder="¿Cómo pelea?">
+            <div class="caja flexbox flex1n">
+                <div class="flexbox2">
+                    <div class="estadisticas_pareja">   
+                        <div class="datos-pj">
+                            <p>Nombre del Héroe</p><input type="text" id="nombreHeroe" placeholder="¿Cómo se llama?">     
+                        </div>           
+                        <div class="datos-pj">
+                            <p>Linaje</p><input type="text" id="linaje" placeholder="¿Cuál es su raza?">  
+                        </div>
+                    </div>
+                    <div class="estadisticas_pareja">
+                        <div class="datos-pj">
+                            <p>Asentamiento</p><input type="text" id="asentamiento" placeholder="¿Donde nació?">
+                        </div>           
+                        <div class="datos-pj">
+                            <p>Subclase</p><input type="text" id="subclase" placeholder="¿Cómo pelea?">
+                        </div>
                     </div>
                 </div>
             </div>    
         </div>
 
         <div class="flexbox margen">
-            <div class="caja centro flexbox">
-                <div class="panel_stat">
-                    AGILIDAD: <input type="text" class="num" placeholder="00"> 
-                    FUERZA: <input type="text" class="num" placeholder="00"> 
-                    FINEZA: <input type="text" class="num" placeholder="00"> 
-                    INSTINTO: <input type="text" class="num" placeholder="00"> 
-                    PRESENCIA: <input type="text" class="num" placeholder="00"> 
-                    CONOCIMIENTO: <input type="text" class="num" placeholder="00">  
-                </div> 
+            <div class="caja flex2 flexbox">
+                <section class="estadisticas flexbox2 flex1n">
+                    <div class="estadisticas_pareja">
+                    <div class="estadisticas_stat"><h4>AGI: </h4><input type="number" class="num" placeholder="00"> </div> 
+                    <div class="estadisticas_stat"><h4>FUE: </h4><input type="number" class="num" placeholder="00"> </div>
+                    <div class="estadisticas_stat"><h4>FIN: </h4><input type="number" class="num" placeholder="00"> </div>
+                    </div>
+                    <div class="estadisticas_pareja">
+                    <div class="estadisticas_stat"><h4>INS: </h4><input type="number" class="num" placeholder="00"></div>                    
+                    <div class="estadisticas_stat"><h4>PRE: </h4><input type="number" class="num" placeholder="00"> </div>
+                    <div class="estadisticas_stat"><h4>CON: </h4><input type="number" class="num" placeholder="00"></div>
+                    </div>
+                </section>    
+                
                 <div class="caja-2">
-                    <div class="panel">EVASIÓN: <input type="text" class="num" placeholder="00">                   
-                    ARMADURA: <input type="text" class="num" placeholder="00">
+                    <section class="estadisticas_pareja">
+                    <div class="panel">EVASIÓN: <input type="number" class="num" placeholder="00"> </div>
+                    <div class="checks panel">                  
+                    ARMADURA: <input type="number" class="num" placeholder="00">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
                         <input type="checkbox">
                         <input type="checkbox">
                         <input type="checkbox">
@@ -69,11 +83,14 @@
                         <input type="checkbox">
                         <input type="checkbox">
                     </div>
+                    </section>
                 </div>
+                <div class="panel">DAÑO: Menor <input type="number" class="stat num" placeholder="00"> Medio <input type="number" class="stat num" placeholder="00"> Mayor</div>
                 <div class="caja-2">
                 <section class="izq">
-                    <div class="panel">HP: 
-                            <input type="text" class="stat num" placeholder="00">
+                    <div class="panel">
+                        <div class="checks">
+                            HP: <input type="number" class="stat num" placeholder="00">                    
                             <input type="checkbox">
                             <input type="checkbox">
                             <input type="checkbox">
@@ -86,12 +103,14 @@
                             <input type="checkbox">
                             <input type="checkbox">
                             <input type="checkbox">
+                        </div>
                     </div>
                  </div>
-                    <div class="panel">DAÑO: Menor <input type="text" class="stat num" placeholder="00"> Medio 
-                        <input type="text" class="stat num" placeholder="00"> Mayor</div>
-                    <div class="panel">ESTRÉS</div>
-                    <div>
+                    <div class="checks panel">
+                        ESTRÉS: 
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
                         <input type="checkbox">
                         <input type="checkbox">
                         <input type="checkbox">
@@ -102,8 +121,8 @@
                         <input type="checkbox">
                         <input type="checkbox">
                     </div>
-                    <div class="panel">HOPE:</div>
-                    <div>
+                    <div class="panel checks">
+                        HOPE:                    
                         <input type="checkbox">
                         <input type="checkbox">
                         <input type="checkbox">
@@ -112,23 +131,31 @@
                         <input type="checkbox">
                     </div>
                 </section>
+                
             </div>
-            <div class="caja derecha">            
+            <section class="caja derecha">            
                     <div class="panel">ARMA PRIMARIA ACTIVA: <input type="text" class="stat" placeholder="Tu arma aquí"></div>
                     <textarea placeholder="Descripcion" class="caja-texto"></textarea>        
                     <div class="panel">ARMA SECUNDARIA ACTIVA: <input type="text" class="stat" placeholder="Tu arma aquí"></div>
                     <textarea placeholder="Descripcion" class="caja-texto"></textarea>            
                     <div class="panel">ARMADURA ACTIVA: <input type="text" class="stat" placeholder="Tu armadura aquí"></div>
-                    <textarea placeholder="Descripcion" class="caja-texto"></textarea>
-                    <div class="panel">INVENTORY</div>
-                    <textarea placeholder="Escribí la historia del personaje" class="caja-texto"></textarea>           
-            </div>            
+                    <textarea placeholder="Descripcion" class="caja-texto"></textarea>                           
+            </section>            
         </div>
+        
 
-        <div class="flexbox margen">      
-            <div class="caja flexbox solo">
-                <h4> MOCHILA: </h4>
-                    <textarea placeholder="Inventario..." class="mochila"></textarea>
+        <div class="flexbox margen">  
+            <section class="caja flexbox flex1">    
+                    <h3>Monedero:</h3>
+                    <div class="flexbox">
+                        <p>Oro: </p><input type="number"  class="stat num" placeholder="00"> <br>
+                        <p>Plata: </p><input type="number"  class="stat num" placeholder="00"> <br>
+                        <p>Cobre: </p><input type="number"  class="stat num" placeholder="00"> <br>
+                    </div>
+            </section>    
+            <div class="caja flexbox flex2">
+                <h3> MOCHILA: </h4>
+                <textarea placeholder="Inventario..." class="mochila"></textarea>
             </div>    
         </div>
 
@@ -141,3 +168,4 @@
     </footer>
 
 </body>
+</html>
