@@ -36,19 +36,6 @@ p {
     text-shadow: #000000 2px 2px 4px;
 }
 
-/* ---- cubitos pueba y todo eso ---- */
-
-.cubito{
-    background-color: #eaceaa;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    height: 100px;
-    width: 200px;
-    flex-grow: 1;
-}
-
-
 
 h2{
     margin-top: 3%;
@@ -186,6 +173,21 @@ nav a{
     text-decoration: none;
     color: inherit;
 }
+/*  ---------- Home page -----------*/
+
+#puerta{
+    background-color: #eaceaa;
+    background-image: url(imgs/puerta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
 
 /* ---------- ficha ----------- */
 
@@ -274,7 +276,7 @@ input[type="text"] {
 
 .navegacion{
     background-color: #ce8053;
-    width: 20%;
+    flex-basis: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -286,7 +288,7 @@ input[type="text"] {
 }
 
 .navegacion-top{
-    justify-content: space-between;
+    justify-content: left;
     position: sticky;
     top: 0px;
 }
@@ -298,11 +300,11 @@ input[type="text"] {
 .navegacion-bot{
     position: sticky;
     top: 105px;
-    padding: 16px 24px;
     text-decoration: none;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     display: flex;
+    flex-grow: 1;
 }
 
 /* ------ shop-section ------ */
